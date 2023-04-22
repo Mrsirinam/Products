@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Работа с данными в LS</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>Магазин "Фрукты-Овощи"</h1>
+	<h2>Товары на складе</h2>
+	<div class="goods"></div>
+	<h2>Добавить товар</h2>
+	<form id="add">
+		<input type="text" name="name" placeholder="Название" required>
+		<input type="number" name="price" id="" placeholder="Цена">
+		<input type="number" min="1" max="1000" value="10" name="cnt" id="" placeholder="Количество">
+		<button type="submit">Добавить на склад</button>
+	</form>
+	<h2>Товары в корзине</h2>
+
+	<script src="index.js" type="module"></script>
+</body>
+
+</html>
+
+<!-- 
+			1) При загрузке страницы проверить  товары в Local Storage. 
+			2)Если товары есть - отобразить их в блоке "goods", или написать "Все товары распроданы"
+			3) При добавлении товара из формы, он добавляется в LS и в блок goods.
+			Товару для быстрого поиска нужен id - неповторяющееся число >=1
+			4) Когда добавляется товар в goods (LS) - его можно 
+					- удалить
+					- изменить
+
+-->

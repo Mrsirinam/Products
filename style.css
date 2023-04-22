@@ -1,0 +1,13 @@
+.product {
+	display: flex;
+}
+.product form  {
+	display: none;
+}
+.product.active form {
+	display: block;
+}
+/* Не второй ребенок (не форма) в момент, когда карточка активна для изменения */
+.product.active>:not(:nth-child(2)) {
+	display: none;
+}
